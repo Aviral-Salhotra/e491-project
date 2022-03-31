@@ -48,8 +48,8 @@ public class CaveCamera : MonoBehaviour{
     float d = -Vector3.Dot(va, vn);
 
     // Find the extent of the perpendicular projection. 
-    //float nd = n / d;
-    float nd = 1.0f;
+    float nd = n / d;
+    //float nd = 1.0f;
 
     float l = Vector3.Dot(vr, va) * nd;
     float r = Vector3.Dot(vr, vb) * nd;
